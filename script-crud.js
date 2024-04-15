@@ -200,7 +200,7 @@ btTextAreaDelete.addEventListener("click",() => {
 
         //VERIFY THE SIZE OF FORM
         let divSize = divForm.clientWidth;
-
+        alert('size: ' + divSize)
         //CHANGE THE SIZE OF THE POPUP SCREEN
         if(divSize > 300){
             popUpBox.style.width = "555px";
