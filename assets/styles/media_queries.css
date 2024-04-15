@@ -1,0 +1,352 @@
+@media screen and (min-width: 768px){
+    
+    /* HEADER AND BANNER */
+
+   /* .container{
+        width: 768px;
+        /*height: 2050.46px;* /
+        height: 2364px;
+    }*/
+
+    .container{
+        background-position-y: 550px;
+    }
+
+    .header__container{
+        align-items: center;
+        width: 768px;
+        /*height: 778px; /* especificado como 878 */ 
+        
+    }
+    
+    .header__logo{
+        align-items: center;
+        width: 156.36px;
+        padding: 40px 0 40px 0; /*validar teste 180px era 40px*/
+    }
+    
+    .banner__container{
+        align-items: center;
+        width: 768px;
+        height: 758px; /*era 858 */
+        padding: 0 224px 0 224px;
+    }
+
+    .banner__container-text{
+        margin-bottom: 0;
+        width: 489px;
+        height: 280px;/*326*/
+    }
+   
+
+    .banner__text{
+        font-family: var(--font-primary);
+        font-size: 53.7px;
+        font-weight: 200;
+        line-height: 80.55px;
+    }
+    
+    .banner__text strong{
+        font-weight: 600;
+        font-size: 53.7px;
+        line-height: 80.55px;
+    }
+
+    .banner__img{
+        width: 483.51px;
+        height: 467px;
+        background-size: 483.51px;
+        background-image: url("../img/images/img_focus.png"); 
+        background-repeat: no-repeat;
+    }
+
+
+    /* tASK CONTAINER */
+
+    .main__container{
+        align-items: center;
+        /*width: 636px;
+        height: 1506px; /*1256px*/
+        margin-top: 64px;
+    }
+
+    .task__container{
+        align-items: center;
+        /*padding: 0 24px 0 24px;*/
+        /*margin-top: 222px;
+        /*width: 588px;
+        height: 503px;*/
+    }
+
+    .task__timer{
+        align-items: center;
+        padding: 24px 0;
+        border: 2px;
+        border-style: solid;
+        border-radius: 32px;
+        border-color: #144480;
+        width: 588px;
+        height: 390px;
+    }
+
+    .task__timer-buttons-container{
+        width: 411px;
+        height: 43px;
+        padding: 16px;
+    }
+
+    .task__option__buttons{
+        height: 43px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #active{
+        font-weight: 600;
+    }
+
+    .task_focus-timer{
+        font-size: 112px;
+        padding: 24px;
+        font-weight: 700;
+        line-height: 138.88px;
+    }
+
+    .task__buttons{
+        align-items: center;
+        gap: 24px;
+        width: 540px;
+        height: 96px;
+    }
+
+    .task__buttons-switch{
+        width: 280px;
+        height: 42px; /* 32px */
+        line-height: 27px;
+        gap: 16px;
+    }
+
+    .task__status{
+        width: 588px;
+        height: 49px;
+        margin-top: 32px;
+    }
+
+    .task__status-description{
+        display: flex;
+        flex-direction:row;
+        width: 588px;
+        height: 49px;
+        margin: 0;
+    }
+
+    .task__status #task__status-st{
+        width: 180px;
+        height: 49px;
+        padding-top: 8px;
+    }
+
+    .task__status #task__status-description-name{
+        display: flex;
+        align-items: center;
+        width: 384px;
+        height: 49px;
+        padding-bottom: 48px;
+        padding-top: 18px;
+    }
+    
+    .task__line{
+        width: 588px;
+    }
+
+    /* TO DO LIST */
+
+    .task__list{
+        margin-top: 50px;
+        width: 588px;
+        /*height: 713px;*/
+    }
+
+    .task__list-title{
+        margin-bottom: 16px;
+    }
+
+    .task__list-item-complete{
+        width: 588px;
+    }
+
+    .task__list-item-pending{
+        width: 588px;
+    }
+
+    .task__text-overflow{
+        width: 515px;
+        overflow: hidden;
+    }
+
+    .task__add-task-form{
+        width: 588px;
+        padding: 16px 8px;
+    }
+
+    .task__add-task-title{
+        width: 301px;
+        height: 31px;
+        font-size: 26px;
+        line-height: 31.2px;
+        padding-left: 16px;
+    }
+
+    .task__add-textarea-box{
+        width: 556px;
+        margin-left: 9px;
+    }
+
+    .task__add-all-buttons{
+        width: 556px;
+        height: 40px;
+        margin: 35px 0 0 16px;
+     }
+
+     .task__add-button{
+        width: 129px;
+    }
+
+    .task__add-button img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .task__add-button-text{
+        width: 82px;
+        height: 27px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+    }
+
+    .task__add-button-group{
+        width: 275px;
+    }
+
+    .task__add-button-save{
+        width: 117px;
+        padding-left: 16px;
+        border-radius: 32px;
+        /*gap: 22px;*/
+    }
+
+    .task__add-button-save img{
+        width: 24px;
+        height: 24px;
+    }
+
+    /* ADD BUTTON */
+
+    .add__new__task__button{
+        margin-top: 40px;
+        width: 588px;
+        height: 64px;
+    }
+
+    .add__new__task__button-add-button{
+        width: 588px;
+        height: 64px;
+    }
+
+    /* FOOTER */
+    .footer__container{
+        width: 768px;
+        padding-bottom: 0;
+    }
+
+    .footer__text-container{
+        width: 648px;
+       
+    }
+}
+
+@media screen and (min-width: 1440px){
+   /* .container{
+        width: 1440px;
+        height: 2034.55px;
+    }*/
+
+    .container{
+        background-position-y: 50px;
+    }
+
+    .header__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 1440px;
+        height: 587.55px; /* 525.55px */
+        padding: 0;
+    }
+
+    .header__logo{
+        align-items: center;
+        width: 156.36px;
+        padding: 40px 0 40px 0; /*validar teste 180px era 40px*/
+
+    }
+
+    .banner__container{
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 1440px;
+        height: 467.55px; /*369.19 405.55px*/        
+    }
+
+    .banner__container-text{
+        margin-bottom: 0;
+        width: 489px;
+        height: 326px;
+    }
+
+    .banner__img{
+        width: 483.51px;
+        background-size: 483.51px;
+        background-image: url("../img/images/img_focus.png"); 
+        background-repeat: no-repeat;
+        
+        
+    }
+
+    .main__container{
+        justify-content:end;
+        width: 636px;
+        margin-top: 80px;
+        
+    }
+
+    .task__list-title{
+        display: flex;
+        justify-content: space-between;
+        width: 588px;
+    }
+
+    .to_do__list-button{
+        display: block;
+        border: none;
+        border-radius: 100%;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        background: none;
+    }
+
+    .task__list-title-icon{
+        display: block;
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer__text-container{
+        width: 1190px;
+    }
+}
+
+

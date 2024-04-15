@@ -1,0 +1,47 @@
+@import url("./assets/styles/header-banner.css");
+@import url("./assets/styles/task.css");
+@import url("./assets/styles/footer.css");
+@import url("./assets/styles/media_queries.css");
+@import url("./assets/styles/popup.css");
+
+:root{
+     --button-color: linear-gradient(180deg, #B872FF 0%, #144480 100%);
+    --font-primary: "Amatic SC", sans-serif;
+    --font-secondary: "Montserrat", sans-serif;
+    --font-timer: "Unbounded", sans-serif;
+    --line-color: #144480;
+    --task-complete-color: #00F4BF66;
+    /*--task-pendind-box-color: #FFFFFF80; #1444804D*/
+    --task-pendind-box-color: rgba(0,0,0,.3);
+    --task-pending-box-border: #144480 solid 2px; 
+}
+
+[data-context="focus"]{
+    --main-bg-color: linear-gradient(180deg, #8B1FF8 0%, #041832 48.44%, #01080E 100%);
+}
+
+[data-context="short"]{
+    --main-bg-color: linear-gradient(180deg, #0F725C 0%, #041832 48.44%, #01080E 100%);
+}
+
+[data-context="long"]{
+    --main-bg-color: linear-gradient(180deg, #1875E9 0%, #041832 48.44%, #01080E 100%);
+}
+
+html{
+    background: var(--main-bg-color);
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    /*min-height: 100vh; verificar se remove ou se fica  */  
+    /*background: var(--background-color-focus);*/
+    color: #ffffff;
+    background: url("./assets/img/images/background-lines.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 480px; /*decidir depois se ira ficar com tamanho fixo ou automatico */
+}

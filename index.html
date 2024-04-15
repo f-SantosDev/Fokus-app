@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-context="focus">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fokus</title>
+    <link rel="shortcut icon" href="./assets/img/logo_and_favicons/Favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@400;500;600&family=Khand&family=Montserrat:wght@400;600;700&family=Unbounded:wght@200..900&family=Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="script-crud.js" defer></script>
+</head>
+<body class="container">
+    <header class="header__container">
+        <div class="header__logo">
+            <div>
+                <img src="./assets/img/logo_and_favicons/Logo.png" alt="Imagem Logo">
+            </div>
+        </div>
+
+        <div class="banner__container">
+            <div class="banner__container-text">
+                <div class="banner__text"><p>Optimize your productivity,<strong> immerse yourself in what matters</strong></p></div>
+            </div>
+            <div class="teste">
+                <img class="banner__img" src="./assets/img/images/focus-bubbles.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="main__container">
+        <div class="task__container">
+            <div class="task__timer">
+               <!-- <span class="task__botoes">  remover class e tag-->
+                    <ul class="task__timer-buttons-container">
+                        <li>
+                            <button data-context="focus" class="task__option__buttons task-timer-button-focus active">Focus</button>
+                        </li>
+                        <li>
+                            <button data-context="short" class="task__option__buttons task-timer-button-short">Short rest</button>
+                        </li>
+                        <li>
+                            <button data-context="long" class="task__option__buttons task-timer-button-long">Long rest</button>
+                        </li>
+                    </ul>
+                <!--</span>  remover class e tag-->
+                <div class="task_focus-timer">
+                    <p>25:00</p>
+                </div>
+                <div class="task__buttons">
+                    <div class="task__buttons-switch">
+                        <label class="task__switch">
+                            <input id="task__switch-button" type="checkbox">
+                            <span class="slider ropund"></span>
+                        </label>
+                        <div><p>Music</p></div>
+                        <div >
+                            <div class="task__volume-buttons">
+                                <p>Vol.</p>
+                                <!--<li class="task__volume-no-press" id="bt-minus"><img src="./assets/img/icones/bt_vol_minus.png"></li>
+                                <li class="task__volume-no-press" id="bt-plus"><img src="./assets/img/icones/bt_vol_plus.png"></li>-->
+                                <button type="button" class="task__volume-buttons_plus__minus" id="bt-minus"><img src="./assets/img/icones/bt_vol_minus.png" alt=""></button>
+                                <button type="button" class="task__volume-buttons_plus__minus" id="bt-plus"><img src="./assets/img/icones/bt_vol_plus.png" alt=""></button>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <button name="button-start-pause" id="button__start-pause" class="button__start-pause">
+                        <img id="button-start-pause-img" src="./assets/img/icones/play_arrow.png" alt="">
+                        <span id="button-start-pause-bt">Start</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="task__status">
+                <div class="task__status-description">
+                    <p id="task__status-st">#In progress</p>
+                    <p id="task__status-description-name"></p>
+                </div>
+                <hr class="task__line">
+            </div>
+        </div>
+
+        <div class="task__list">
+            <div class="task__list-title">
+                <p>To-do List:</p>
+                <button class="to_do__list-button">
+                    <img src="./assets/img/icones/more_menu.svg" alt="" class="task__list-title-icon">
+                </button>
+            </div>
+            <div class="task__list__container">
+                <ul class="task__list-items"></ul>
+            </div>
+            <div class="task__scroll-buttons hidden">
+                <button type="button" class="task__scroll-buttons_plus__minus" id="task__scroll__down"><img src="./assets/img/icones/arrowDown.png" alt=""></button>
+                <button type="button" class="task__scroll-buttons_plus__minus" id="task__scroll__top"><img src="./assets/img/icones/arrowUp.png" alt=""></button>
+            </div>
+            
+            <form class="task__add-task-form hidden">
+                <div id="task__add-task-form-box">
+                    <label class="task__add-task-title task__list-check">Add tasks</label>
+                    <textarea class="task__add-textarea-box task__add-textarea-text" id="task__add-textarea" placeholder="What are you working now?" maxlength="77"></textarea>
+                </div>
+                <div class="task__add-all-buttons">
+                    <button class="task__add-button" id="task__button-delete">
+                        <img src="./assets/img/icones/delete.png" alt="">
+                        <span class="task__add-button-text">Delete</span>
+                    </button>
+                    <div class="task__add-button-group">
+                        <button type="button" class="task__add-button" id="task__button-cancel">
+                            <img src="./assets/img/icones/cancelghost.png" alt="">
+                            <span class="task__add-button-text">Cancel</span>
+                        </button>
+                        <button class="task__add-button-save" id="task__button-save">
+                            <img src="./assets/img/icones/save.png" alt="">
+                            <span class="task__add-button-text button__save-text">Save</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="add__new__task__button">
+                <button name="button__add__new__task" class="add__new__task__button-add-button">
+                    <img src="./assets/img/icones/add_lilac.png" class="add__new__task__button-img" alt="">
+                    <span class="add__new__task__button-text">Add new task</span>
+                </button>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer__container">
+        <div class="footer__text-container">
+            <p class="footer__text-text">Fictional and non-commercial project. AI-generated images in Adobe Firefly. Developed by Alura.</p>
+            <p class="footer__text-text">Powered by Fabio Santos.</p>
+        </div>
+    </footer>
+</body>
+</html>

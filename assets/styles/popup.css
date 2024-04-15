@@ -1,0 +1,41 @@
+.popupBox{
+    position:absolute;
+    width: 266px;
+    height: 263px;
+    padding: 15px;
+    
+    background-color: #f5812a;
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 50PX;
+    display: flex;
+    
+    border: 2px solid rgb(2, 2, 54);
+    border-radius: 10PX;
+    overflow: hidden;
+    transition: 1.5s;
+}
+
+
+.popup__div__buttons{
+    display: flex;
+    gap: 8px;
+    width: 500px;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.popupButtons{
+    border: 2px solid rgb(2, 2, 54);
+    border-radius: 10px;
+    background: linear-gradient(180deg, #B872FF 0%, #f5812a 100%);
+    color: #ffffff;
+    width: 50%;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px rgb(2, 2, 54);
+    
+}
+
+/*.popupText{
+    overflow: hidden;
+}*/
