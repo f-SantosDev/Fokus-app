@@ -81,6 +81,7 @@
 .task__buttons-switch{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     font-family: var(--font-secondary);
     font-size: 18px;
@@ -142,25 +143,9 @@
   }
 
   /* inicio */
-.task__volume-buttons{
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    width: 130px;
-     
+.task__buttons__volume{
+    display: none;
 }
-
-.task__volume-buttons .task__volume-buttons_plus__minus{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0 0 5px;
-    background: var(--button-color);
-    border-radius: 32px;
-    width: 40px;
-    height: 40px;
-}
-
  /* fim */
   
   .task__buttons button{
@@ -513,4 +498,3 @@
     line-height: 27px;
     color: #B872FF;
 }
-
